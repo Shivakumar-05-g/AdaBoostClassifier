@@ -396,27 +396,6 @@ report = classification_report(
 
 st.text(report)
 
-# =========================================
-# ACTUAL VS PREDICTED
-# =========================================
-
-st.subheader("📉 Actual vs Predicted")
-
-fig_ap, ax_ap = plt.subplots(
-    figsize=(6,4)
-)
-
-ax_ap.scatter(
-    y_test,
-    y_pred,
-    alpha=0.6
-)
-
-ax_ap.set_xlabel("Actual")
-
-ax_ap.set_ylabel("Predicted")
-
-st.pyplot(fig_ap)
 
 # =========================================
 # PREDICTION SECTION
